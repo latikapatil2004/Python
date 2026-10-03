@@ -1,0 +1,10 @@
+a=10;
+b=5.5;
+isok='true';
+char='A';
+c=9.9999;
+print(a);
+print(b);
+print(isok);
+print(char);
+print(c);

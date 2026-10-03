@@ -1,0 +1,10 @@
+a=input("Enterr first value");
+b=input("enter second value");
+sum=int(a)+int(b);
+print("Addition =",sum);
+sub=int(a)-int(b);
+print("substraction =",sub);
+mul=int(a)*int(b);
+print("Multiplication =",mul);
+div=int(a)/int(b);
+print("ddiviion =",div);

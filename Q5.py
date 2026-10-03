@@ -1,0 +1,8 @@
+radius=input("Enter radius \n")
+pi=input("enter pi value \n")
+area=float(pi)*int(radius)*int(radius)
+print("Area of circle" ,area)
+circumference=2*float(pi)*int(radius)
+print("circle circumference :" , circumference)
+diameter=2*int(radius)
+print("Diameter :" ,diameter)
