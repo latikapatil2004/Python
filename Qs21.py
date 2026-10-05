@@ -1,14 +1,29 @@
-'''Question 21: Write a Java program to reverse a number without using a loop.
-Asked In Basic program
+'''uestion 21: Given an integer array and a specific element, write a Java program to find the index position of that element in the array. If the element is not found, print -1.
+Asked In Practice assignment
 Input:
-123
+Array = [10, 20, 30, 40, 50]
+Element to find = 30
 
 Output:
-321
+Element found at index = 2
 
 Explanation:
-Digits are separated using arithmetic operations and rearranged in reverse order without using loops.'''
+Traverse the array from index 0 and compare each element with the target value; when a match is found return its index otherwise return -1 if the element is not present.'''
 
-num=int(input("enter value"))
-rev=(num%10)*100+((num//10)%10)*10+(num//100)
-print("Reverse : ",rev)
+
+list=[10,20,30,40,50]
+index=-1
+key=90
+l=len(list)
+for i in range(0,l):
+    if list[i]==key:
+        index=i
+        print(f"Index {key} found at index {index}")
+        break;
+        
+
+
+if index==-1:
+    print(index)
+       
+       

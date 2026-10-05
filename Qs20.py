@@ -1,21 +1,19 @@
-'''Question 20: Write a Java program to compute the sum of digits of an integer.
-Asked In Basic program
+'''uestion 20: Write a Java program to print all elements from an integer array that are greater than a given number.
+Asked In Practice assignment
 Input:
-123
+Array = [10, 25, 5, 40, 18]
+Given Number = 20
 
 Output:
-6
+Elements greater than 20: 25 40
 
 Explanation:
-Each digit is separated using modulus and division operations.
-1 + 2 + 3 = 6.'''
+Traverse the array and compare each element with the given number; if the element is greater than the number, print it.'''
 
-num=int(input("Enterr number : "))
-sum=0
-while num>0:
-    rem=num%10
-    
-    sum=sum+rem
-    num=num//10
-    
-print("Sum of digits : ",sum)
+
+arr=[10,25,5,40,18]
+val=20
+for i in range(0,len(arr)):
+    if arr[i]>val:
+        print(arr[i])
+        

@@ -1,23 +1,11 @@
-'''
-Question 12: Write a Java program to calculate simple interest.
-Asked In Basic program
-Input:
-Principal = 1000
-Rate = 5
-Time = 2
+'''Question 12: Write a program in java to insert an element at desired position from an array.
+Asked In Practice assignment
+Input the size of array : 6
 
-Output:
-Simple Interest = 100
+Input 5 elements in the array in ascending order :
+1 2 3 4 5
 
-Explanation:
-Simple Interest formula:
-SI = (Principal * Rate * Time) / 100
-Applying the formula gives 100.
+Input the position where to insert : 2
+Value : 200
 
-lightbulb Take a Help'''
-
-principle=int(input("Enter principle \n"))
-rate=int(input("Enter rate \n"))
-time=int(input("Enter time \n"))
-simple_intrest=(principle*rate*time)/100
-print("Simple intrest : ",simple_intrest)
+Expected Output : The new list is : 1 2 200 3 4 5'''

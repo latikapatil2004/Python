@@ -1,28 +1,32 @@
-'''Question 24: Write a Java program to check whether a number is a Neon number or not.
-Asked In Basic program
+'''Question 24: Write a program in java to rotate an array by N positions ?
+Asked In Practice assignment
 Input:
-9
+Array = [0, 3, 6, 9, 12, 14, 18, 20, 22, 25, 27]
+Position = 4
 
 Output:
-Neon Number
+Rotated Array = [12, 14, 18, 20, 22, 25, 27, 0, 3, 6, 9]
 
 Explanation:
-A Neon number is a number where the sum of digits of its square is equal to the number itself.
-9^2 = 81 ? 8 + 1 = 9.'''
+Split the array into two parts at the given position and place the second part first followed by the first part to complete the rotation.'''
 
 
-num=int(input("enter num\n"))
-square=num*num
-sum=0
-while square>0:
-    rem=square%10
-    sum=sum+rem
-    square=square//10
+
+arr=[0, 3, 6, 9, 12, 14, 18, 20, 22, 25, 27]
+pos=4;
+nums=[0]*len(arr)
+j=0
+for i in range(pos,len(arr)):
+    nums[j]=arr[i];
+    j=j+1
     
-if num==sum:
-    print("Neon number")
-else:
-    print("not neon")
+for i in range(0,pos):
+    nums[j]=arr[i];
+    j=j+1
     
+   
+print(nums)
+ 
+   
     
     

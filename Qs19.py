@@ -1,15 +1,16 @@
-'''Question 19: Write a Java program that reads a number and displays its cube.
-Asked In Basic program
+'''Question 19: Given an integer array, replace all the negative numbers in the array with 0 and print the updated array.
+Asked In Practice assignment
 Input:
-Number = 4
+Array = [5, -3, 7, -1, 0, -6, 4]
 
 Output:
-Cube = 64
+Updated Array = [5, 0, 7, 0, 0, 0, 4]
 
 Explanation:
-The cube of a number is calculated by multiplying the number by itself three times.
-4 * 4 * 4 = 64.'''
+Traverse the array and check each element; if the element is negative replace it with 0, otherwise keep it unchanged, then print the modified array.'''
 
-number=int(input("Enter number"))
-cube=number*number*number
-print("Cube : ",cube)
+arr=[5, -3, 7, -1, 0, -6, 4]
+for i in range (0,len(arr)):
+    if arr[i]<0:
+        arr[i]=0
+print(arr)

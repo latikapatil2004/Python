@@ -8,12 +8,3 @@ Explanation :
 We traverse the array and compare each element with the search key. If it matches, print "found" with index; otherwise print "not found".'''
 
 
-list=[10,20,30,40,50]
-index=-1
-key=30
-l=len(list)
-for i in range(0,l):
-    if list[i]==key:
-        index=i
-        break;
-print(f"Index{key} found at index {index}")

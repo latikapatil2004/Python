@@ -1,18 +1,21 @@
-'''Question 23: Write a Java program to calculate the sum of the first and last digit without using a loop.
-Asked In Basic program
+'''Question 25: Move all zeros in an array to the end while maintaining the relative order of non-zero elements.
+Asked In Practice assignment
 Input:
-123
+Array = [0, 1, 0, 3, 12]
 
 Output:
-4
+Array = [1, 3, 12, 0, 0]
 
 Explanation:
-First digit = 1
-Last digit = 3
-Sum = 1 + 3 = 4.'''
+Traverse the array and shift all non-zero elements forward while keeping their order the same, then place all zeros at the remaining positions at the end.'''
 
 
-num=int(input("Enter number"))
-first=num//100
-last=num%10
-print("sum of first and last digit :",first+last)
+arr=[0, 1, 0, 3, 12]
+nums=[0]*len(arr)
+j=0
+for i in range(len(arr)):
+    if arr[i]!=0:
+        nums[j]=arr[i]
+        j=j+1
+
+print(nums)

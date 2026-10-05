@@ -1,20 +1,19 @@
-'''uestion 2: Write a Java program to check whether a triangle is valid or not.
-Asked In Just Practice assignment
+'''Question 31: Replace First and Last Element with 0.
+Asked In Practice assignment
 Input:
-A = 5, B = 6, C = 7
+Array = [5, 3, 7, 2]
 
 Output:
-Valid Triangle
+Array = [0, 3, 7, 0]
 
 Explanation:
-A triangle is valid if the sum of any two sides is greater than the third side.
+Update the first and last positions of the array with 0 and leave the middle elements unchanged.'''
 
-lightbulb Take a Help'''
- 
-A=int(input("enter the value\n"))
-B=int(input("enter the value\n"))
-C=int(input("enter the value\n"))
-if A+B==C:
-    print("Valid Triangle")
-else:
-    print("not valid triangle")
+
+nums=[5, 3, 7, 2]
+nums[0]=0
+nums[len(nums)-1]=0
+  
+print(nums)
+        
+        

@@ -1,27 +1,28 @@
-'''Question 4: Write a Java program to check whether a number is positive, negative or zero.
-Asked In Just Practice assignment
+'''Question 34: Return the first element that repeats in the array.
+Asked In Practice assignment
 Input:
-Number = -5
+Array = [10, 5, 3, 4, 3, 5, 6]
 
 Output:
-Negative
+First repeating element = 5
 
 Explanation:
-If number > 0 ? Positive
-If number < 0 ? Negative
-If number = 0 ? Zero'''
+Check elements from left to right and identify the element whose first occurrence appears earlier but repeats later in the array.
 
+lightbulb Take a Help'''
 
-number=int(input("Enter the value"))
-if number>0:
-    
-    print("Positive")
-elif number<0:
-     print("negativetive")
-   
+arr=[10, 5, 3, 4, 3, 5, 6]
+for i in range(0,len(arr)):
+    for j in range(i+1,len(arr)-1):
+        
+       if arr[i]==arr[j]:
+           print(arr[i]);   
+           break;
 else:
-    print("zero")
+    continue    
     
 
      
     
+    
+

@@ -1,28 +1,13 @@
-'''Question 18: Write a Java program to convert days into years, months, and weeks.
-Asked In Basic program
-Input:
-Days = 400
-
-Output:
-Years = 1
-Months = 1
-Weeks = 1
-
-Explanation:
-1 year = 365 days.
-After subtracting 365 days, the remaining days are divided into months (30 days each) and weeks (7 days each).
-
-lightbulb Take a Help'''
+'''Question 18: Write a Java program to check whether a given array is empty or not.
+Asked In Practice assignment
+Input :- Array elements: { } Explanation
+1. Every array has a predefined property called length.
+2. If array.length == 0, then the array is empty.
+3. Otherwise, the array contains elements.
+Output :- Array is empty'''
 
 
-days=int(input("enterr days : \n"))
-years =days//365
-Update_days = days-(years * 365)
-months = days//30
-days = days - (months * 30)
-weeks = days//7
-print(years)
 
-print(months)
-print(days)
-print(weeks)
+list=[]
+if len(list)==0:
+    print("Array is empty")

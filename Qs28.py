@@ -1,16 +1,37 @@
-'''Question 1: Write a Java program to check whether a number is even or odd.
-Asked In Just Practice assignment
+'''Question 28: Write a java program to find the union array of two unsorted arrays.
+Asked In Practice assignment
 Input:
-Number = 8
+Array1 = [1, 2, 3]
+Array2 = [2, 3, 4, 5]
 
 Output:
-Even
+Union Array = [1, 2, 3, 4, 5]
 
 Explanation:
-If a number is divisible by 2, it is Even. Otherwise, it is Odd.'''
+Combine both arrays and remove duplicate elements so that each value appears only once.'''
 
-num=int(input("Enter the value\n"))
-if num%2==0:
-    print("Even")
-else:
-    print("odd");
+
+
+arr1=[1, 2, 3]
+arr2=[2, 3, 4, 5]
+nums=([0]*len(arr1))*len(arr2);
+k=0
+for i in range(len(arr1)):
+    nums[k]=arr1[i];
+    k=k+1
+    
+for i in range(len(arr2)):
+    found=False;
+    if nums[k]==arr2[i]:
+        found=True;
+        break;
+        
+    if found==False:
+        
+        nums[k]=arr2[i];
+        k=k+1
+     
+for j in range(len(nums)):
+    print(nums)
+      
+ 

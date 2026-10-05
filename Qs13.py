@@ -1,22 +1,13 @@
-'''Question 13: Write a Java program to calculate compound interest.
-Asked In Basic program
-Input:
-Principal = 2000
-Rate = 10
-Time = 2
+'''Question 13: Write a java program to display only non-zero values from an array.
+Asked In Practice assignment
+Input : Array = {1, 0, 5, 0, 7, 0, 9}
+Output : Non-zero elements = {1, 5, 7, 9}
+Explanation :
+Traverse the array and print only elements that are not equal to zero.'''
 
-Output:
-Compound Interest = 420
 
-Explanation:
-Compound Interest is calculated using the formula:
-CI = P(1 + R/100)^T ? P
-After calculation, the compound interest is 420.
-
-lightbulb Take a Help'''
-
-principle=int(input("Enter principle \n"))
-rate=int(input("Enter rate \n"))
-time=int(input("Enter time \n"))
-compound_interest = principle * (1 + rate/100) ** time - principle
-print("Simple intrest : ",compound_interest)
+arr=[1, 0, 5, 0, 7, 0, 9]
+for i in range(0,len(arr)):
+    if arr[i]!=0:
+        print(arr[i],end=" ")
+        

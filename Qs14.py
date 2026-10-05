@@ -1,22 +1,20 @@
-'''Question 14: Write a Java program to swap two numbers using a third variable.
-Asked In Basic program
-Input:
-A = 5
-B = 10
-
-Output:
-A = 10
-B = 5
-
+'''Question 14: Write a java program to remove duplicated values from arrays.
+Asked In Practice assignment
+Input : Array = {10, 20, 20, 30, 40, 40, 50}
+Output : Unique elements = {10, 20, 30, 40, 50}
 Explanation:
-A temporary variable is used to store one value while swapping the numbers.
+Traverse the array, check if element already exists before adding to result, thus avoiding duplicates.'''
 
-lightbulb Take a Help'''
 
-a=int(input("enter A : "))
-b=int(input("enter B : "))
-c=a
-a=b
-b=c
-print("A :",a)
-print("B :",b)
+
+arr=[10, 20, 20, 30, 40, 40, 50]
+for i in range(0,len(arr)):
+    found=True
+    for j in range(0,i):
+        if arr[i]==arr[j]:
+            found=False
+            break            
+    if found :
+        print(arr[i])
+
+   

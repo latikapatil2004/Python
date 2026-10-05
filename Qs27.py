@@ -1,15 +1,38 @@
-'''Question 27: Write a Java program to toggle the case of an alphabet using ASCII values.
-Asked In Basic program
+'''Question 27: Write a java program to count the frequency of each element in a given array.
+Asked In Practice assignment
 Input:
-a
+Array = [1, 2, 2, 3, 3, 3, 4]
 
 Output:
-A
+1 ? 1 time
+2 ? 2 times
+3 ? 3 times
+4 ? 1 time
 
 Explanation:
-Lowercase and uppercase letters differ by 32 in ASCII values.
-By adding or subtracting 32, the case of the alphabet can be changed'''
+For each element in the array, count the number of occurrences by comparing it with all other elements.
 
-a=input("enter character")
-toggle=a-32
-print("Toggle case :",toggle)
+lightbulb Take a Help'''
+
+
+
+arr=[1, 2, 2, 3, 3, 3, 4]
+for i in range(0,len(arr)):
+    found=False
+    for j in range(0,len(arr)):
+        if arr[i]==arr[j] :
+            found=True;
+            break
+            
+        if found:
+            continue
+        count=0
+            
+for i in range(len(arr)):
+    if arr[i]==arr[j]:
+        count+=1
+    
+    print(f"{arr[i]} :{count} times")
+            
+            
+            

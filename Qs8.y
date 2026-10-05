@@ -6,19 +6,3 @@ Explanation:
 Check sequence numbers one by one. If a number from 1 to maximum (7) is not in the array, it is missing.
 
 lightbulb Take a Help'''
-
-
-
-arr=[1,2,4,5,7]
-print("Miissing elements") 
-for i in range(1,8):
-    found=0
-    for j in range(0,len(arr)):
-        if arr[j]==i:
-            found=1
-            break
-    if found==0:
-        print(i,end=" ") 
-    
-          
-   

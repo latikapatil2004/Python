@@ -1,15 +1,24 @@
-'''Question 16: Write a Java program to print the ASCII value of a given character
-Asked In Basic program
-Input:
-Character = A
-
+'''Question 16: Write a Java program to calculate the average of all elements present in an integer array.
+Asked In Practice assignment
+Input Array:
+[10, 20, 30, 40, 50]
 Output:
-ASCII value = 65
+Average of array elements = 30
+Explanation
+? The average of array elements is calculated by:
+Average=Sum of all elementsNumber of elements\text{Average} = \frac{\text{Sum of all elements}}{\text{Number of elements}}Average=Number of elementsSum of all elements
+? First, iterate through the array and add all elements to a variable sum.
+? Then divide sum by the total number of elements (array.length) to get the average.
 
-Explanation:
-Every character has a unique ASCII value. When a character is typecast to an integer, its ASCII value is obtained. The ASCII value of 'A' is 6
+lightbulb Take a Help'''
 
-'''
-a=input("Enter character \n")
-Ascii=ord(a)
-print("Ascii Value :" ,Ascii)
+
+
+arr=[10, 20, 30, 40, 50]
+sum=0
+
+for i in range(0,len(arr)):
+    sum=sum+arr[i];
+avg=sum//len(arr)
+
+print("Average of array elements",avg)

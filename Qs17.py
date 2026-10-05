@@ -1,24 +1,24 @@
-'''Question 17: Write a Java program to convert seconds into hours, minutes, and seconds.
-Asked In Basic program
-Input:
-Seconds = 3665
+'''Question 17: Write a Java program to count the number of even and odd elements present in a given integer array.
+Asked In Practice assignment
+Input :- Array = { 10, 15, 20, 25, 30 }
+Output :- Even count = 3
+Odd count = 2 Explanation
+? An even number is a number that is completely divisible by 2.
+? An odd number is a number that is not divisible by 2.
+? Traverse the array using a loop.'''
 
-Output:
-Hours = 1
-Minutes = 1
-Seconds = 5
 
-Explanation:
-1 hour = 3600 seconds.
-3665 / 3600 gives 1 hour.
-Remaining seconds are converted into minutes and seconds using division and modulus operations.'''
+arr=[10,15,20,25,30]
+ecount=0
+ocount=0
+for i in range(0,len(arr)):
+    if arr[i]%2==0:
+        ecount+=1
+    else:
+        ocount+=1
+    
+    
+print("Even Count",ecount)
+print("odd Count",ocount)
 
-seconds=int(input("enter seconds"))
-
-hours = seconds/3600;
-remainingSeconds = seconds % 3600;
-minutes = remainingSeconds / 60;
-seconds = remainingSeconds % 60;
-print("hour : ",hours)
-print("Minutes : ",minutes)
-print("Seconds : ",seconds)
+        

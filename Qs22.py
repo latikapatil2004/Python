@@ -1,20 +1,26 @@
-'''Question 22: Write a Java program to find the first and last digit of a three-digit number without using a loop.
-Asked In Basic program
+'''Question 22: Write a Java program to check whether two integer arrays are equal.
+Two arrays are considered equal if:
+Asked In Practice assignment
 Input:
-456
+Array1 = [10, 20, 30, 40]
+Array2 = [10, 20, 30, 40]
 
 Output:
-First = 4
-Last = 6
+Arrays are equal.
 
 Explanation:
-The first digit is obtained by dividing the number by 100.
-The last digit is obtained using the modulus operator (% 10).'''
+First compare the lengths of both arrays and if they are equal then compare elements at each index; if all elements match the arrays are equal otherwise they are not.'''
 
 
-num=int(input("Enter number"))
-first=num//100
-last=num%10
-print("First digit :",first)
-print("Last digit :",last)
-
+Array1 = [10, 20, 30, 40]
+Array2 = [10, 20, 90, 40]
+found=True
+for i in range(0,len(Array1)):
+    if Array1[i]!=Array2[i]:
+        found=False
+        break
+       
+if found==True:
+    print("arrays are equal")
+else:
+    print("Array not equal")
