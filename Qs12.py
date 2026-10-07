@@ -1,11 +1,12 @@
-'''Question 12: Write a program in java to insert an element at desired position from an array.
-Asked In Practice assignment
-Input the size of array : 6
+'''Q.1
+Student Marks Dictionary
+Write a Python program to take a student name and marks as input and store them in a dictionary. 
+Display the student name and marks.'''
 
-Input 5 elements in the array in ascending order :
-1 2 3 4 5
 
-Input the position where to insert : 2
-Value : 200
-
-Expected Output : The new list is : 1 2 200 3 4 5'''
+name=input("Enter name");
+marks=int(input("Enter marks"))
+dict={}
+dict["name"]=name
+dict["marks"]=marks
+print(dict)

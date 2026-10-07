@@ -1,24 +1,25 @@
-'''Question 16: Write a Java program to calculate the average of all elements present in an integer array.
-Asked In Practice assignment
-Input Array:
-[10, 20, 30, 40, 50]
-Output:
-Average of array elements = 30
-Explanation
-? The average of array elements is calculated by:
-Average=Sum of all elementsNumber of elements\text{Average} = \frac{\text{Sum of all elements}}{\text{Number of elements}}Average=Number of elementsSum of all elements
-? First, iterate through the array and add all elements to a variable sum.
-? Then divide sum by the total number of elements (array.length) to get the average.
-
-lightbulb Take a Help'''
+'''
+Q.5
+Dictionary Update
+Write a Python program to create a dictionary containing three key-value pairs. 
+Ask the user for a key and a new value, then update the dictionary with the new value. 
+Display the updated dictionary.'''
 
 
 
-arr=[10, 20, 30, 40, 50]
-sum=0
+dict={}
+for i in range(3):
+    name=input("enter name :")
+    id=int(input("Enter id :"))
+    dict[name]=id
+    
+    
+print("Original dictionary" ,dict)  
+name=input("update name")
+id=int(input("Enter id "))
+dict[name]=id
 
-for i in range(0,len(arr)):
-    sum=sum+arr[i];
-avg=sum//len(arr)
-
-print("Average of array elements",avg)
+print("Updated dictionary: "," ")
+for key,value in dict.items():
+    print(key,value)
+    

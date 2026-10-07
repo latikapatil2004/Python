@@ -1,24 +1,18 @@
-'''Question 11: Write a java program to give an array, find the second largest element.
-Asked In Practice assignment
-Input : Array = {12, 35, 1, 10, 34, 1}
-Output : Second largest = 34
-Explanation:
-First largest is 35, second largest is the next maximum (34). We maintain two variables (largest, secondLargest).'''
+'''10.Find Common Even Numbers
+
+Write a Python program to create two sets and display the common elements that are even numbers.
+Sample Input:
+Set 1 = {2, 3, 4, 5, 12, 35}
+Set 2 = {1,2,5,4,6,12}
+Sample Output:
+2
+4
+12'''
 
 
-arr=[12,35,1,10,34,1]
-largest=arr[0]
-secondLargest=arr[0];
-for i in range(0,len(arr)):
-    if arr[i]>largest:
-        largest=arr[i]
-
-for i in range(0,len(arr)):
-    if arr[i]>secondLargest and arr[i]<largest:
-        secondLargest=arr[i]
-       
-     
-
-print("secondlargest",secondLargest)
-
+Set1 = {2, 3, 4, 5, 12, 35}
+Set2 = {1,2,5,4,6,12}
+for num in Set1:
+    if num in Set2 and num%2==0:
+        print(num)
 

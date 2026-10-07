@@ -1,14 +1,22 @@
-'''Question 9: Write a java program to copy one array to another array.
-Asked In Practice assignment
-Input : Array1 = {5, 10, 15, 20}
-Output : Array2 = {5, 10, 15, 20}
-Explanation:
-Copy each element of Array1 into Array2 using index-by-index assignment'''
+'''8.Find the Difference Between Maximum and Minimum
+Write a Python program to create a set of integers and calculate the difference between the maximum and
+minimum elements.'''
 
 
-arr=[5,10,15,20]
-nums=[0,0,0,0]
-for i in range(0,len(arr)):
-    nums[i]=arr[i]
-print(nums)
-    
+
+set={1,2,3,5,6,7,5,3,10}
+max=0
+min=0
+for num in set:
+    if num>=max:
+        max=num
+        
+for num in set:
+    if num<=min:
+        min=num
+        
+        
+print("Diffrence between max and min ", max-min)
+                
+        
+        

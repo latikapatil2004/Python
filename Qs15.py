@@ -1,23 +1,14 @@
-'''Question 15: Write a java program to find common elements between two arrays.
-Asked In Practice assignment
-Input :
-Array1 = {1, 2, 3, 4, 5}
-Array2 = {3, 4, 5, 6, 7}
-Output : Common elements = {3, 4, 5}
-Explanation :
-Compare each element of Array1 with all elements of Array2, if match found ? it is a common element.
-
-lightbulb Take a Help'''
+'''Q.4
+Product Price List
+Write a Python program to take the names and prices of three products and store them in a dictionary. 
+Display all product names and their prices.
+'''
 
 
-
-arr1=[1, 2, 3, 4, 5]
-arr2=[3, 4, 5, 6, 7]
-for i in range(0,len(arr1)):
-    for j in range(0,len(arr2)):
-        if arr1[i]==arr2[j]:
-            print(arr1[i])
-        
-        
-    
-       
+dict={}
+for i in range(3):
+    name=input("Enter name")
+    prices=int(input("Enter prices"))
+    dict[name]=prices
+for key,val in dict.items():
+    print(key,val)

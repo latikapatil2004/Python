@@ -1,8 +1,14 @@
-radius=input("Enter radius \n")
-pi=input("enter pi value \n")
-area=float(pi)*int(radius)*int(radius)
-print("Area of circle" ,area)
-circumference=2*float(pi)*int(radius)
-print("circle circumference :" , circumference)
-diameter=2*int(radius)
-print("Diameter :" ,diameter)
+'''. Calculate the Average of Set Elements
+Write a Python program to create a set of integers and calculate the average of all elements.
+'''
+
+
+
+numbers={10,20,30,40,50}
+sum=0
+for num in numbers:
+    sum=sum+num
+    
+    
+avg=sum/len(numbers)
+print("Average",avg)

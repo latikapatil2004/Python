@@ -1,25 +1,13 @@
-'''Question 3: Write a Java program to display even & odd values from an array.
-Asked In Practice assignment
-Input:
-Array Size = 6
-Array Elements = 11 20 33 42 55 60
-Output:
-Even Values = 20 42 60
-Odd Values = 11 33 55
-Explanation:
-? Traverse the array element by element.
-? If an element is divisible by 2, it is even. Otherwise, it is odd.
-? Separate lists are displayed for even and odd values'''
+'''.Find the Maximum Element
+Write a Python program to create a set of integers and find the largest element in the set.
+'''
 
 
-list=[11,20,33,42,55,60]
-l=len(list)
-print("Even values")
-for i in range(0,l):
-    if list[i]%2==0:
-        print(list[i],end=" ")
+s={10,20,30,40,50}
+largest=0
+for num in s:
+    if(num>largest):
+        largest=num
         
-print("\nOdd values")
-for i in range(0,l):
-    if list[i]%2!=0:
-        print(list[i],end=" ")
+        
+print("LArgest",largest)

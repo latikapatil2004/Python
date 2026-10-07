@@ -1,13 +1,16 @@
-'''Question 18: Write a Java program to check whether a given array is empty or not.
-Asked In Practice assignment
-Input :- Array elements: { } Explanation
-1. Every array has a predefined property called length.
-2. If array.length == 0, then the array is empty.
-3. Otherwise, the array contains elements.
-Output :- Array is empty'''
+'''Q.7
+Display the dictionary.
+Country and Capital
+Write a Python program to take the names of three countries and their capitals from the user and store them in a dictionary. Display all country-capital pairs.'''
 
 
 
-list=[]
-if len(list)==0:
-    print("Array is empty")
+dict={}
+for i in range(3):
+    country=input("enter country name : ")
+    capital=input("enter capital name : ")
+    dict[country]=capital
+    
+    
+for key,val in dict.items():
+    print(key,":",val)

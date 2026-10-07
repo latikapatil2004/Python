@@ -1,24 +1,19 @@
-'''Question 8: Write a java program to find missing elements in an array.
-Asked In Practice assignment
-Input : Array = {1, 2, 4, 5, 7} (numbers from 1 to 7 should be present)
-Output : Missing elements = {3, 6}
-Explanation:
-Check sequence numbers one by one. If a number from 1 to maximum (7) is not in the array, it is missing.
+'''
+7.Add Corresponding Elements from Two Sets
+Write a Python program to create two sets containing the same number of elements. Convert them into 
+lists and calculate the sum of corresponding elements.
+Sample Input:
+Set 1 = {10, 20, 30}
+Set 2 = {1, 2, 3}
+Sample Output:
+11
+22
+33'''
 
-lightbulb Take a Help'''
+Set1 = {10, 20, 30}
+Set2 = {1, 2, 3}
 
-
-
-arr=[1,2,4,5,7]
-print("Miissing elements") 
-for i in range(1,8):
-    found=0
-    for j in range(0,len(arr)):
-        if arr[j]==i:
-            found=1
-            break
-    if found==0:
-        print(i,end=" ") 
-    
-          
-   
+list1=list(Set1)
+list2=list(Set2)
+for i in range (0,len(list1)):
+    print(list1[i]+list2[i])

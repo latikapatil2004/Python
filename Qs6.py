@@ -1,19 +1,19 @@
-'''Question 6: Write a java program to search an element in an array , its element found or not.
-Asked In Practice assignment
-Input:
-Array = {10, 20, 30, 40, 50}
-Element to search = 30
-Output : Element 30 found at index 2
-Explanation :
-We traverse the array and compare each element with the search key. If it matches, print "found" with index; otherwise print "not found".'''
+'''5.Find the Sum of Even Numbers
+Write a Python program to create a set of integers and calculate the sum of only the even numbers.'''
 
 
-list=[10,20,30,40,50]
-index=-1
-key=30
-l=len(list)
-for i in range(0,l):
-    if list[i]==key:
-        index=i
-        break;
-print(f"Index{key} found at index {index}")
+
+set={2,4,5,6,7,8,9,11}
+esum=0
+osum=0
+for num in set:
+    if num%2==0:
+        esum=esum+num
+    elif num%2!=0:
+        osum=osum+num
+    
+print("Even ssum",esum)
+print("Odd ssum",osum)
+
+    
+    
