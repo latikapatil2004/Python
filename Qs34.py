@@ -1,23 +1,31 @@
-'''Question 8: Write a Java program to check whether a year is a leap year or not.
-Asked In Just Practice assignment
-Input:
-Year = 2024
+'''Display a menu to perform the following operations without using switch or match-case:
 
-Output:
-Leap Year
+Add Employee
 
-Explanation:
-A year is leap if:
+View Employee
 
-Divisible by 4
+Search Employee
 
-Not divisible by 100 unless divisible by 400'''
+Exit'''
 
-year=int(input("Enteer year"))
-if year%400==0 or (year%4==0 and year%100!=0):
-    print("Leap year")
+employee=((201,"Latika",23455),
+         (201,"Latika",23455,));
+while True:
+    print("\n----- Employee Management Menu -----")
+    print("1. Add Employee")
+    print("2. View Employee")
+    print("3. Search Employee")
+    print("4. Exit")
+    choice=int(input("Enter choice"))
+    if choice=="1":
+        emp_id=int(input("Enter id "));
+        emp_name=input("Enter name");
+        salary=int(input("Enter salary"));
+        employee.append(emp_id,emp_name,salary)
+    elif choice=="2":
+        for emp in employee:
+            print("Employee_id",emp[0],"\t","Employee_name",emp[1],"\t","Employee_salary",emp[2]);
+  
+        
     
-        
-else:
-    print("Not leap year")
-        
+    

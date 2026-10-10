@@ -1,13 +1,17 @@
-'''. Find the Sum of All Elements in a Set
-Write a Python program to create a set of integers and calculate the sum of all elements.
-'''
+'''Accessing of Tuples'''
+
+tup=tuple("Geeks");
+print(tup[0]);
+print(tup[1]);
+print(tup[3])
 
 
 
+print("---------------------------------------------------")
 
-s={10,20,30,40,50}
-sum=0
-for num in s:
-    sum=sum+num
-    
-print("Sum ",sum)
+
+tuplee=("Programming","is","java")
+a,b,c=tuplee
+print(a)
+print(b)
+print(c)

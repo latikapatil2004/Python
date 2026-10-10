@@ -1,16 +1,7 @@
-'''Question 19: Given an integer array, replace all the negative numbers in the array with 0 and print the updated array.
-Asked In Practice assignment
-Input:
-Array = [5, -3, 7, -1, 0, -6, 4]
+'''10. Concatenate two tuples.
+'''
 
-Output:
-Updated Array = [5, 0, 7, 0, 0, 0, 4]
 
-Explanation:
-Traverse the array and check each element; if the element is negative replace it with 0, otherwise keep it unchanged, then print the modified array.'''
-
-arr=[5, -3, 7, -1, 0, -6, 4]
-for i in range (0,len(arr)):
-    if arr[i]<0:
-        arr[i]=0
-print(arr)
+tup=(10,20,30,40)
+tup2=(50,60,70,80)
+print(tup+tup2)

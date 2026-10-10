@@ -1,20 +1,9 @@
-'''Question 26: Write a Java program to check whether a number is a Spy number.
-Asked In Basic program
-Input:
-1412
+'''16. Iterate through a tuple using a while loop.
+'''
 
-Output:
-Spy Number
 
-Explanation:
-A Spy number is a number where the sum of digits equals the product of digits.
-Sum = 1 + 4 + 1 + 2 = 8
-Product = 1 * 4 * 1 * 2 = 8.'''
- 
-num=int(input("Enter number"))
-sum=num%10+((num//10)%10)+((num//100)%10)+(num//1000)
-product=num%10*((num//10)%10)*((num//100)%10)*(num//1000)
-if sum==product:
-    print("Spyy")
-else:
-    print("number is not spy")
+tup=(1,2,3,4,5,6,6)
+i=0
+while i<len(tup):
+    print(tup[i])
+    i+=1

@@ -1,5 +1,12 @@
-set={1,2,3,4,5,6}
 
-for num in set:
-    square=num*num
-    print(square," ")
+
+
+from collections import namedtuple
+Employee = namedtuple(
+    "Employee",
+    ["id", "name", "role"]
+)
+employee=Employee(1,"john","devloper")
+print(employee.name)
+employee.id
+employee.role

@@ -1,25 +1,14 @@
 '''
-Q.5
-Dictionary Update
-Write a Python program to create a dictionary containing three key-value pairs. 
-Ask the user for a key and a new value, then update the dictionary with the new value. 
-Display the updated dictionary.'''
+7. Count how many times a specific value appears in a tuple.
+'''
 
 
-
-dict={}
-for i in range(3):
-    name=input("enter name :")
-    id=int(input("Enter id :"))
-    dict[name]=id
-    
-    
-print("Original dictionary" ,dict)  
-name=input("update name")
-id=int(input("Enter id "))
-dict[name]=id
-
-print("Updated dictionary: "," ")
-for key,value in dict.items():
-    print(key,value)
-    
+t=(1,4,3,4,4,6,66)
+nm=4;
+count=0
+for num in t:
+    if num==nm:
+        count+=1;
+        
+print("No of count ",count)
+        
