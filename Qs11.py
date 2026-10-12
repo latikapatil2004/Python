@@ -1,15 +1,18 @@
-'''Creating a Tuple'''
+'''10.Find Common Even Numbers
 
-t=(1,2,3,"Latika",3.5);
-print(t)
-tup=()
-print(tup)
-list=[1,2,3,4,5];
-print("Before conversion ",list)
-print("after Conversion of list to tuple",tuple(list))
-dict={1,"LAtika"}
-print(tuple(dict))
+Write a Python program to create two sets and display the common elements that are even numbers.
+Sample Input:
+Set 1 = {2, 3, 4, 5, 12, 35}
+Set 2 = {1,2,5,4,6,12}
+Sample Output:
+2
+4
+12'''
 
 
-tuplle=tuple('geeks');
-print(tuplle)
+Set1 = {2, 3, 4, 5, 12, 35}
+Set2 = {1,2,5,4,6,12}
+for num in Set1:
+    if num in Set2 and num%2==0:
+        print(num)
+

@@ -1,5 +1,12 @@
-'''4. Print the last element of a tuple using negative indexing.
-'''
+'''Q.2
+Employee Salary Record
+Write a Python program to take an employee ID and salary as input and store them in a dictionary. 
+Display the employee ID and salary.'''
 
-tup=(1,2,3,4,5,6)
-print(tup[-1])
+
+id=int(input("Enter id "))
+salary=int(input("Enter salary"))
+dict={}
+dict["id"]=id
+dict["salary"]=salary
+print(dict)

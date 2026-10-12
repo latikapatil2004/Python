@@ -1,7 +1,14 @@
-'''
-6. Find the length of a tuple.
+'''Q.4
+Product Price List
+Write a Python program to take the names and prices of three products and store them in a dictionary. 
+Display all product names and their prices.
 '''
 
 
-t=(1,2,3,4,5,6,7)
-print(len(t))
+dict={}
+for i in range(3):
+    name=input("Enter name")
+    prices=int(input("Enter prices"))
+    dict[name]=prices
+for key,val in dict.items():
+    print(key,val)

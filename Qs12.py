@@ -1,6 +1,12 @@
-'''3. Access the third element of a tuple.
-'''
+'''Q.1
+Student Marks Dictionary
+Write a Python program to take a student name and marks as input and store them in a dictionary. 
+Display the student name and marks.'''
 
 
-tupl=(1,2,3,4,5);
-print(tupl[2])
+name=input("Enter name");
+marks=int(input("Enter marks"))
+dict={}
+dict["name"]=name
+dict["marks"]=marks
+print(dict)
